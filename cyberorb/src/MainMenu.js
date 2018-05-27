@@ -6,7 +6,8 @@ Ball.MainMenu.prototype = {
 		this.gameTitle.anchor.set(0.5,0);
 		this.startButton = this.add.button(Ball._WIDTH*0.5, 200, 'button-start', this.startGame, this, 2, 0, 1);
 		this.startButton.anchor.set(0.5,0);
-		this.startButton.input.useHandCursor = true;
+    this.startButton.inputEnabled = true
+		//this.startButton.input.useHandCursor = true;
 
 		// button to "read the article"
 	},
