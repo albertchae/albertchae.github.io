@@ -154,7 +154,7 @@ Ball.Game.prototype = {
 			this.bounceSound.play();
 		}
 		// Vibration API
-		if("vibrate" in window.navigator) {
+		if(window.navigator.vibrate) {
 			window.navigator.vibrate(100);
 		}
 	},
