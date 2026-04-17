@@ -97,25 +97,7 @@ if ('onhashchange' in window) {
 <span id="W1L200" class="LineNr">200 </span><span class="Statement">CREATE</span> <span class="Special">TABLE</span> <span class="Special">public</span>.queue_snapshot_chunks (
 <span id="W1L201" class="LineNr">201 </span>    snapshot_id <span class="Type">character</span>(<span class="Constant">26</span>) <span class="Statement">NOT</span> <span class="Special">NULL</span>,
 <span id="W1L202" class="LineNr">202 </span>    chunk_id <span class="Type">integer</span> <span class="Statement">NOT</span> <span class="Special">NULL</span>,
-<span id="W1L203" class="Folded">203 </span><span class="Folded">+-- 18 lines: data bytea----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
-<span id="W1L221" class="LineNr">221 </span>    account_id text <span class="Statement">NOT</span> <span class="Special">NULL</span>,
-<span id="W1L222" class="LineNr">222 </span>    app_id text <span class="Statement">NOT</span> <span class="Special">NULL</span>,
-<span id="W1L223" class="LineNr">223 </span>    function_id text <span class="Statement">NOT</span> <span class="Special">NULL</span>,
-<span id="W1L224" class="LineNr">224 </span>    run_id text <span class="Statement">NOT</span> <span class="Special">NULL</span>,
-<span id="W1L225" class="LineNr">225 </span>    env_id text <span class="Statement">NOT</span> <span class="Special">NULL</span>,
-<span id="W1L226" class="LineNr">226 </span>    output jsonb,
-<span class="LineNr">    </span><span class="DiffDelete">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
-<span id="W1L227" class="LineNr">227 </span>    debug_run_id text,
-<span id="W1L228" class="LineNr">228 </span>    debug_session_id text,
-<span id="W1L229" class="LineNr">229 </span>    status text,
-<span id="W1L230" class="LineNr">230 </span><span class="DiffAdd">    input jsonb,</span><span class="DiffAdd">                                                                                                                                                                                                  </span>
-<span id="W1L231" class="LineNr">231 </span>    event_ids jsonb
-<span id="W1L232" class="LineNr">232 </span>);
-<span id="W1L233" class="LineNr">233 </span>
-<span id="W1L234" class="LineNr">234 </span>
-<span id="W1L235" class="LineNr">235 </span><span class="Comment">--</span>
-<span id="W1L236" class="LineNr">236 </span><span class="Comment">-- Name: trace_runs; Type: TABLE; Schema: public; Owner: -</span>
-<span id="W1L237" class="Folded">237 </span><span class="Folded">+-- 58 lines: --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+<span id="W1L203" class="Folded">203 </span><span class="Folded">+-- 92 lines: data bytea----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
 <span id="W1L295" class="LineNr">295 </span>    app_id uuid,
 <span id="W1L296" class="LineNr">296 </span>    id bytea <span class="Statement">NOT</span> <span class="Special">NULL</span>,
 <span id="W1L297" class="LineNr">297 </span>    gateway_id bytea <span class="Statement">NOT</span> <span class="Special">NULL</span>,
@@ -291,25 +273,7 @@ if ('onhashchange' in window) {
 <span id="W2L190" class="LineNr">190 </span><span class="Statement">CREATE</span> <span class="Special">TABLE</span> <span class="Special">public</span>.queue_snapshot_chunks (
 <span id="W2L191" class="LineNr">191 </span>    snapshot_id <span class="Type">character</span>(<span class="Constant">26</span>) <span class="Statement">NOT</span> <span class="Special">NULL</span>,
 <span id="W2L192" class="LineNr">192 </span>    chunk_id <span class="Type">integer</span> <span class="Statement">NOT</span> <span class="Special">NULL</span>,
-<span id="W2L193" class="Folded">193 </span><span class="Folded">+-- 18 lines: data bytea----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
-<span id="W2L211" class="LineNr">211 </span>    account_id text <span class="Statement">NOT</span> <span class="Special">NULL</span>,
-<span id="W2L212" class="LineNr">212 </span>    app_id text <span class="Statement">NOT</span> <span class="Special">NULL</span>,
-<span id="W2L213" class="LineNr">213 </span>    function_id text <span class="Statement">NOT</span> <span class="Special">NULL</span>,
-<span id="W2L214" class="LineNr">214 </span>    run_id text <span class="Statement">NOT</span> <span class="Special">NULL</span>,
-<span id="W2L215" class="LineNr">215 </span>    env_id text <span class="Statement">NOT</span> <span class="Special">NULL</span>,
-<span id="W2L216" class="LineNr">216 </span>    output jsonb,
-<span id="W2L217" class="LineNr">217 </span><span class="DiffAdd">    input jsonb,</span><span class="DiffAdd">                                                                                                                                                                                                  </span>
-<span id="W2L218" class="LineNr">218 </span>    debug_run_id text,
-<span id="W2L219" class="LineNr">219 </span>    debug_session_id text,
-<span id="W2L220" class="LineNr">220 </span>    status text,
-<span class="LineNr">    </span><span class="DiffDelete">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
-<span id="W2L221" class="LineNr">221 </span>    event_ids jsonb
-<span id="W2L222" class="LineNr">222 </span>);
-<span id="W2L223" class="LineNr">223 </span>
-<span id="W2L224" class="LineNr">224 </span>
-<span id="W2L225" class="LineNr">225 </span><span class="Comment">--</span>
-<span id="W2L226" class="LineNr">226 </span><span class="Comment">-- Name: trace_runs; Type: TABLE; Schema: public; Owner: -</span>
-<span id="W2L227" class="Folded">227 </span><span class="Folded">+-- 58 lines: --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+<span id="W2L193" class="Folded">193 </span><span class="Folded">+-- 92 lines: data bytea----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
 <span id="W2L285" class="LineNr">285 </span>    app_id uuid,
 <span id="W2L286" class="LineNr">286 </span>    id bytea <span class="Statement">NOT</span> <span class="Special">NULL</span>,
 <span id="W2L287" class="LineNr">287 </span>    gateway_id bytea <span class="Statement">NOT</span> <span class="Special">NULL</span>,
